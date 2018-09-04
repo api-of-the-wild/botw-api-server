@@ -1,10 +1,8 @@
 #!groovy
 
 pipeline {
-  agent any
-  
-  tools {
-    nodejs 'node-8.10.0'
+  agent {
+    docker { image "keymux/docker-ubuntu-nvm-yarn:0.2.0"}
   }
 
   stages {
