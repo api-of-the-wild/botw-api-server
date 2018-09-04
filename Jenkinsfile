@@ -2,7 +2,7 @@
 
 pipeline {
   agent {
-    docker { image "keymux/docker-ubuntu-nvm-yarn"}
+    docker { image "mhart/alpine-node:8"}
   }
 
   stages {
