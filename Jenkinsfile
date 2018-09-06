@@ -11,6 +11,7 @@ pipeline {
         sh 'node -v'
         sh 'npm -v'
         sh 'yarn --version'
+        sh 'yarn init -y'
         sh 'yarn install'
       }
     }
