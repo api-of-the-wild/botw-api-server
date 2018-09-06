@@ -2,7 +2,7 @@
 
 pipeline {
   agent {
-    docker { image "mhart/alpine-node:8"}
+    docker { image "kwhitejr/docker-ubuntu-node8.10:0.1.0"}
   }
 
   stages {
