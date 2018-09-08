@@ -2,7 +2,7 @@
 
 pipeline {
   agent {
-    docker { image "node:8-alpine"}
+    docker { image "kwhitejr/docker-ubuntu-node8.10:0.1.0"}
   }
 
   stages {
