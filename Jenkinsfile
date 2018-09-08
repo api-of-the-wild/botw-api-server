@@ -2,7 +2,7 @@
 
 pipeline {
   agent {
-    docker { image "kwhitejr/docker-ubuntu-node8.10:0.1.0"}
+    docker { image "node:8-alpine"}
   }
 
   stages {
@@ -11,7 +11,6 @@ pipeline {
         sh 'node -v'
         sh 'npm -v'
         sh 'yarn --version'
-        sh 'yarn init'
         sh 'yarn install'
       }
     }
